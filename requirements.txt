@@ -1,0 +1,10 @@
+requests
+werkzeug
+flask
+connexion
+swagger-ui-bundle
+lxml
+pyopenssl
+ndg-httpsclient
+pyasn1
+flask-restplus
