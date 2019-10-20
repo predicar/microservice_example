@@ -14,7 +14,7 @@ Run tests:
 ```
 python -m unittest server/tests/*.py
 ```
-Start server:
+Start server: (in case of `ModuleNotFoundError`, run `export PYTHONPATH=.`)
 ```
 python server/app.py
 ```

@@ -1,3 +1,5 @@
+"""The file contains a test for each function in the example_service.py"""
+
 import unittest
 from server.services.example_service import get_value_by_key
 

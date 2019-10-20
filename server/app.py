@@ -1,3 +1,5 @@
+"""Main function of server"""
+
 from flask import Flask, request
 from flask_restplus import Api, Resource, fields
 from server.services import example_service
@@ -27,6 +29,7 @@ class IsAliveController(Resource):
 @api.response(code=400, description='Bad Request')
 @api.response(code=500, description='Internal Server Error')
 class ExampleController(Resource):
+
     model = api.model('Example Model', {'color': fields.String(required=True),
                                         'size': fields.Integer(),
                                         'is_active': fields.Boolean(required=True),

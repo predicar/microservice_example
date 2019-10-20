@@ -1,3 +1,5 @@
+"""The file contains a test for '/api/example' endpoint"""
+
 from unittest import TestCase, main
 import json
 from server.app import app
