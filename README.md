@@ -1,0 +1,37 @@
+# flask-microservice-example
+Python Flask app with basic structure and example of API
+
+## Ways to start up:
+
+---
+
+### 1. without Docker
+Install requirements
+```
+pip install -r requirements.txt
+```
+Run tests:
+```
+python -m unittest server/tests/*.py
+```
+Start server: (in case of `ModuleNotFoundError`, run `export PYTHONPATH=.`)
+```
+python server/app.py
+```
+Visit: [API documentation](http://0.0.0.0::8080)
+
+---
+
+### 2. with Docker
+Build the Docker image:
+```
+docker build -t predicar/microservice-example .
+```
+Create a container from the image:
+```
+docker run --name me-container -d -p 0.0.0.0:8080:8080 predicar/microservice-example
+```
+Visit: [API documentation](http://0.0.0.0::8080)
+
+
+
