@@ -18,7 +18,7 @@ Start server: (in case of `ModuleNotFoundError`, run `export PYTHONPATH=.`)
 ```
 python server/app.py
 ```
-Visit: [API documentation](http://0.0.0.0::8080)
+Visit: [API documentation](http://0.0.0.0:8080)
 
 ---
 
@@ -31,7 +31,7 @@ Create a container from the image:
 ```
 docker run --name me-container -d -p 0.0.0.0:8080:8080 predicar/microservice-example
 ```
-Visit: [API documentation](http://0.0.0.0::8080)
+Visit: [API documentation](http://0.0.0.0:8080)
 
 
 
