@@ -18,20 +18,16 @@ Start server: (in case of `ModuleNotFoundError`, run `export PYTHONPATH=.`)
 ```
 python server/app.py
 ```
-Visit: [API documentation](http://0.0.0.0::8080)
+Visit: [API documentation](http://0.0.0.0:8080)
 
 ---
 
 ### 2. with Docker
-Build the Docker image:
+Run Docker compose
 ```
-docker build -t predicar/microservice-example .
+docker-compose up
 ```
-Create a container from the image:
-```
-docker run --name me-container -d -p 0.0.0.0:8080:8080 predicar/microservice-example
-```
-Visit: [API documentation](http://0.0.0.0::8080)
+Visit: [API documentation](http://0.0.0.0:8080)
 
 
 

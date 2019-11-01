@@ -3,7 +3,7 @@
 from flask import Flask, request
 from flask_restplus import Api, Resource, fields
 from server.services import example_service
-
+from server.variables import app_config
 
 app = Flask(__name__)
 flask_app = Api(app=app,
@@ -53,4 +53,4 @@ class ExampleController(Resource):
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+    app.run(**app_config)

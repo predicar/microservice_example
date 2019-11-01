@@ -1,0 +1,15 @@
+version: "3.4"
+
+x-common-variables: &common-variables
+  MICROSERVICE_EXAMPLE_HOST: 0.0.0.0
+  MICROSERVICE_EXAMPLE_PORT: 8086
+  DEBUG: 0
+
+services:
+  microservice-example:
+    build: .
+    volumes:
+      - .:/server
+    ports:
+      - "8080:8086"
+    environment: *common-variables
