@@ -8,6 +8,8 @@ x-common-variables: &common-variables
 services:
   microservice-example:
     build: .
+    volumes:
+      - .:/server
     ports:
       - "8080:8086"
     environment: *common-variables
