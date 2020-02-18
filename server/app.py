@@ -9,7 +9,7 @@ app = Flask(__name__)
 flask_app = Api(app=app,
                 version='1.0',
                 title='Microservice example',
-                description='Python Flask server with basic structure and example API')
+                description='Python Flask server with BASIC structure and example API')
 api = flask_app.namespace(name='api', description='Examples of endpoints')
 
 
