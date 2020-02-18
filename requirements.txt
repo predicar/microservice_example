@@ -1,5 +1,5 @@
 requests
-werkzeug
+werkzeug==0.16.1
 flask
 connexion
 swagger-ui-bundle
