@@ -1,5 +1,5 @@
 # flask-microservice-example
-Python Flask app with basic structure and example of  API
+Python Flask app with basic structure and example of API
 
 ## Ways to start up:
 
